@@ -1,10 +1,7 @@
-// api.js
-
 const API_URL =
   "https://article-extractor-and-summarizer.p.rapidapi.com/summarize";
 const API_KEY = "badb8a0809msh095160e078fa098p1d0a8fjsnf098f3a9b8b4";
 
-// Function to fetch the article summary
 export const fetchSummary = async (articleUrl) => {
   try {
     const response = await fetch(

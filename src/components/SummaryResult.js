@@ -1,6 +1,5 @@
 import React from "react";
 
-// SummaryResult component displays the fetched summary or an error message
 const SummaryResult = ({ summary }) => {
   return (
     <div>

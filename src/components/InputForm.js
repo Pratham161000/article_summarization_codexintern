@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 
-// InputForm takes onFetchSummary as a prop
 const InputForm = ({ onFetchSummary }) => {
-  const [url, setUrl] = useState(""); // To hold the input URL
-
+  const [url, setUrl] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (url) onFetchSummary(url); // If URL is provided, trigger the summary fetch
+    if (url) onFetchSummary(url);
   };
 
   return (
@@ -15,7 +13,7 @@ const InputForm = ({ onFetchSummary }) => {
         type="text"
         placeholder="Enter article URL"
         value={url}
-        onChange={(e) => setUrl(e.target.value)} // Update URL state on input change
+        onChange={(e) => setUrl(e.target.value)}
       />
       <button type="submit">Get Summary</button>
     </form>
